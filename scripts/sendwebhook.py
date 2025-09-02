@@ -4,7 +4,8 @@ webhook_url = 'https://discord.com/api/webhooks/1412321293222674515/Ee6fjp9_Zp5p
 data = {
     'content': 'Hallo, Discord!',
     'username': 'MartinsSensDeskBot'  # Optional: Absendername
-    # Optional: 'avatar_url': 'https://beispiel.de/avatar.png'
+    # Optional: 
+    'avatar_url': 'https://gravatar.com/avatar/bbfbc285d1d9eefdfa2afa876374b687a90f13e6ab345bdee46fc19230152441?v=1756788547000&size=256&d=initials'
 }
 
 response = requests.post(webhook_url, json=data)
