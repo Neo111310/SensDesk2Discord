@@ -46,7 +46,6 @@ webhook_url = parameter_dict.get("webhook_url")
 url = parameter_dict.get("url") 
 MyLogFile = parameter_dict.get("MyLogFile")
 writelog = parameter_dict.get("writelog")
-print(MyLogFile)
 # r"C:\Users\MartinJestl\Downloads\python\jaylog.txt" # parameter_dict.get("MyLogFile")
 jetzt = datetime.now().strftime('%Y.%m.%d %H:%M:%S')
 LogFileText = "Neuer Eintrag - " + jetzt + "\n"
@@ -59,8 +58,8 @@ if response.status_code == 200:
     root = ET.fromstring(response.content)
     
     # Beispiel: Alle Tag-Namen und deren Text ausgeben
-    for child in root:
-        print(child.tag, child.text)
+    # for child in root:
+    #     print(child.tag, child.text)
 
 
     # Werte aus Root -> Agent auslesen
