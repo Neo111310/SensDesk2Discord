@@ -2,6 +2,16 @@ import requests
 from datetime import datetime
 import requests
 import xml.etree.ElementTree as ET
+import sys
+
+# Start Parameter Checken
+sendmsgdisc = False 
+
+if len(sys.argv) > 1:
+    param1 = sys.argv[1]
+    if param1 == "msgon":
+        sendmsgdisc = True 
+
 
 # Globale Parameter aus der Config datei Laden
 # Webhook vom Discord-Server
@@ -134,7 +144,7 @@ for sensor in sensors:
     print(f"Zeitpunkt {zeit}")
     LogFileText += f"Zeitpunkt {zeit}\n"
 
-    if int(sensoralarm) == 1:
+    if int(sensoralarm) == 1 and sendmsgdisc == True:   
         #Send Errormsg
         data = {
             'content': f'Hallo, fehlermeldung ID:{sens_id} - Name: {name} - Wert: {svalue} {units} - Zeit: {zeit} - Alarm: {sensoralarm}',
@@ -149,9 +159,14 @@ for sensor in sensors:
             print(f'Fehler: {response.status_code}')
 
 else:
-    LogFileText += f"Log Ende\n###################################################\n"
-    with open(MyLogFile, "a") as datei:
+    
+    print(f"Fehler beim Laden der Daten: {response.status_code}")
+
+
+LogFileText += f"Log Ende\n###################################################\n"
+    
+# Logfile Schreiben   
+with open(MyLogFile, "a") as datei:
         datei.write(LogFileText)
 
-    print(f"Fehler beim Laden der Daten: {response.status_code}")
 
