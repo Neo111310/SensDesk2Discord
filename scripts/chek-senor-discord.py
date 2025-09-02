@@ -45,6 +45,7 @@ with open(dateipfad, "r") as file:
 webhook_url = parameter_dict.get("webhook_url")
 url = parameter_dict.get("url") 
 MyLogFile = parameter_dict.get("MyLogFile")
+writelog = parameter_dict.get("writelog")
 print(MyLogFile)
 # r"C:\Users\MartinJestl\Downloads\python\jaylog.txt" # parameter_dict.get("MyLogFile")
 jetzt = datetime.now().strftime('%Y.%m.%d %H:%M:%S')
@@ -142,7 +143,7 @@ if response.status_code == 200:
         if int(sensoralarm) == 1 and sendmsgdisc == True:   
             #Send Errormsg
             data = {
-                'content': f'Hallo, fehlermeldung ID:{sens_id} - Name: {name} - Wert: {svalue} {units} - Zeit: {zeit} - Alarm: {sensoralarm}',
+                'content': f'Hallo Martin, Fehlermeldung -- ID:{sens_id} - Name: {name} - Wert: {svalue} {units} - Zeit: {zeit} - Alarm: {sensoralarm}',
                 'username': 'MartinsSensDeskBot'  # Optional: Absendername
                 }
 
@@ -159,9 +160,10 @@ else:
 
 
 LogFileText += f"Log Ende\n###################################################\n"
-    
-# Logfile Schreiben   
-with open(MyLogFile, "a") as datei:
-        datei.write(LogFileText)
+
+if writelog == "j":    
+    # Logfile Schreiben   
+    with open(MyLogFile, "a") as datei:
+            datei.write(LogFileText)
 
 # Ende der Verarbeitung
