@@ -1,0 +1,79 @@
+Neuer Eintrag - 2025.09.02 22:25:17
+Agent Version: 2025.05.4
+Agent Name: BellEquip Sensdesk
+Agent Timestamp: 1756844719
+
+... Ger�t ...
+
+Device ID: 130
+Device Name: K�hlhaus-�berwachung-Perlogis
+Model: HWg-STE2 Plus (devtype_id=101)
+Status: 1
+
+-- Sensoren --
+    --------
+    Device: K�hlhaus-�berwachung-Perlogis
+    Sensor ID: 1186
+    Sensor Name: Temperatur K�hlhaus Perlogis
+    Sensor Value: 6.7 �C
+    Sensor Alarm: 0
+
+    --------
+    Device: K�hlhaus-�berwachung-Perlogis
+    Sensor ID: 1188
+    Sensor Name: Nicht Verwendet
+    Sensor Value: 0.0 _switch
+    Sensor Alarm: 0
+
+    --------
+    Device: K�hlhaus-�berwachung-Perlogis
+    Sensor ID: 1187
+    Sensor Name: K�hlungs-Steuerung
+    Sensor Value: 0.1 _switch
+    Sensor Alarm: 0
+
+
+... Ger�t ...
+
+Device ID: 131
+Device Name: Weinlager-Perlogis
+Model: HWg-STE2 Lite (devtype_id=102)
+Status: 1
+
+-- Sensoren --
+    --------
+    Device: Weinlager-Perlogis
+    Sensor ID: 1193
+    Sensor Name: Weinlager Hygro1-Kombi Perlogis
+    Sensor Value: 72.2 %RH
+    Sensor Alarm: 0
+
+    --------
+    Device: Weinlager-Perlogis
+    Sensor ID: 1192
+    Sensor Name: Weinlager Temp1-Kombi Perlogis
+    Sensor Value: 13.6 �C
+    Sensor Alarm: 1
+
+    --------
+    Device: Weinlager-Perlogis
+    Sensor ID: 1194
+    Sensor Name: Weinlager Temp2 Perlogis
+    Sensor Value: 12.8 �C
+    Sensor Alarm: 0
+
+
+### Errors ### 
+
+Zusammenfassung vom 2025.09.02 22:25:17
+    --------
+    Device: Weinlager-Perlogis
+    Sensor ID: 1192
+    Sensor Name: Weinlager Temp1-Kombi Perlogis
+    Sensor Value: 13.6 �C
+    Sensor Alarm: 1
+
+
+
+Log Ende
+###################################################
