@@ -1,0 +1,219 @@
+<Root>
+    <Agent>
+        <Ver>2025.05.4</Ver>
+        <XmlVer>1.0.0</XmlVer>
+        <Name>BellEquip Sensdesk</Name>
+        <Addr>sensdesk.at</Addr>
+        <Team>Team Martin_Jestl</Team>
+        <User>Anonymous</User>
+        <Timestamp>1756830898</Timestamp>
+    </Agent>
+    <Devices>
+        <Device dev_id="130">
+            <Agent>
+                <Name>Monitor-Kuehlhaus</Name>
+                <Enable>1</Enable>
+                <MAC>00:0A:59:06:62:12</MAC>
+                <IMEI/>
+                <Addr>192.168.234.69</Addr>
+                <LocalAddr>192.168.234.69</LocalAddr>
+                <Port>80</Port>
+                <LocalPort>80</LocalPort>
+                <Username/>
+                <Passwd/>
+                <Mask>255.255.255.0</Mask>
+                <GW>192.168.234.1</GW>
+                <Model devtype_id="101">HWg-STE2 Plus</Model>
+                <Incon incon_id="6">HWg PUSH via HTML</Incon>
+                <LogPer>60</LogPer>
+                <DatalogPer>3600</DatalogPer>
+                <Push push_id=""/>
+                <Status>1</Status>
+                <Alias>Kühlhaus-Überwachung-Perlogis</Alias>
+                <Description>
+Hängt über der Türe von Kühlhaus neben der Steuerung
+                </Description>
+            </Agent>
+            <Time>
+                <Timezone>1</Timezone>
+                <Dst>1</Dst>
+                <Timestamp>1741613773</Timestamp>
+            </Time>
+            <Groups>
+                <Group sens_group_id="0">
+                    <Key>NoGroup</Key>
+                    <Name/>
+                    <Alias/>
+                    <Description/>
+                    <Sensors>
+                        <Sensor sens_id="1186">
+                            <Name>TemperaturInnen</Name>
+                            <ID>14902</ID>
+                            <Senstype senstype_id="4">Generic sensor</Senstype>
+                            <Units unit_id="2">°C</Units>
+                            <LogPer>60</LogPer>
+                            <Exp>-1</Exp>
+                            <Min>30</Min>
+                            <Max>80</Max>
+                            <Shift>0</Shift>
+                            <Hyst>10</Hyst>
+                            <Status>
+                                <State>1</State>
+                                <Alarm>0</Alarm>
+                            </Status>
+                            <Alias>Temperatur Kühlhaus Perlogis</Alias>
+                            <Description/>
+                            <Value>61</Value>
+                            <Timestamp>1756830830</Timestamp>
+                            <Writable>0</Writable>
+                        </Sensor>
+                        <Sensor sens_id="1188">
+                            <Name>Tuere Kuehlhaus</Name>
+                            <ID>2</ID>
+                            <Senstype senstype_id="2">Binary input</Senstype>
+                            <Units unit_id="13">_switch</Units>
+                            <LogPer>60</LogPer>
+                            <Exp>0</Exp>
+                            <Min>-2</Min>
+                            <Max>2</Max>
+                            <Shift>0</Shift>
+                            <Hyst>0</Hyst>
+                            <Status>
+                                <State>1</State>
+                                <Alarm>0</Alarm>
+                            </Status>
+                            <Alias>Nicht Verwendet</Alias>
+                            <Description/>
+                            <Value>0</Value>
+                            <Timestamp>1756830830</Timestamp>
+                            <Writable>0</Writable>
+                        </Sensor>
+                        <Sensor sens_id="1187">
+                            <Name>Alarm-Steuerung</Name>
+                            <ID>1</ID>
+                            <Senstype senstype_id="2">Binary input</Senstype>
+                            <Units unit_id="13">_switch</Units>
+                            <LogPer>60</LogPer>
+                            <Exp>0</Exp>
+                            <Min>1</Min>
+                            <Max>1</Max>
+                            <Shift>0</Shift>
+                            <Hyst>0</Hyst>
+                            <Status>
+                                <State>1</State>
+                                <Alarm>0</Alarm>
+                            </Status>
+                            <Alias>Kühlungs-Steuerung</Alias>
+                            <Description/>
+                            <Value>1</Value>
+                            <Timestamp>1756830830</Timestamp>
+                            <Writable>0</Writable>
+                        </Sensor>
+                    </Sensors>
+                </Group>
+            </Groups>
+        </Device>
+        <Device dev_id="131">
+            <Agent>
+                <Name>STE2 LITE Harrand-Weinkeller</Name>
+                <Enable>1</Enable>
+                <MAC>00:0A:59:06:71:38</MAC>
+                <IMEI/>
+                <Addr>192.168.234.149</Addr>
+                <LocalAddr>192.168.234.149</LocalAddr>
+                <Port>80</Port>
+                <LocalPort>80</LocalPort>
+                <Username/>
+                <Passwd/>
+                <Mask>255.255.255.0</Mask>
+                <GW>192.168.77.1</GW>
+                <Model devtype_id="102">HWg-STE2 Lite</Model>
+                <Incon incon_id="6">HWg PUSH via HTML</Incon>
+                <LogPer>60</LogPer>
+                <DatalogPer>3600</DatalogPer>
+                <Push push_id=""/>
+                <Status>1</Status>
+                <Alias>Weinlager-Perlogis</Alias>
+                <Description/>
+            </Agent>
+            <Time>
+                <Timezone>1</Timezone>
+                <Dst>1</Dst>
+                <Timestamp>1743421357</Timestamp>
+            </Time>
+            <Groups>
+                <Group sens_group_id="0">
+                    <Key>NoGroup</Key>
+                    <Name/>
+                    <Alias/>
+                    <Description/>
+                    <Sensors>
+                        <Sensor sens_id="1193">
+                            <Name>Weinkeller Hygro</Name>
+                            <ID>22134</ID>
+                            <Senstype senstype_id="4">Generic sensor</Senstype>
+                            <Units unit_id="5">%RH</Units>
+                            <LogPer>60</LogPer>
+                            <Exp>-1</Exp>
+                            <Min>600</Min>
+                            <Max>850</Max>
+                            <Shift>0</Shift>
+                            <Hyst>50</Hyst>
+                            <Status>
+                                <State>1</State>
+                                <Alarm>0</Alarm>
+                            </Status>
+                            <Alias>Weinlager Hygro1-Kombi Perlogis</Alias>
+                            <Description/>
+                            <Value>724</Value>
+                            <Timestamp>1756830038</Timestamp>
+                            <Writable>0</Writable>
+                        </Sensor>
+                        <Sensor sens_id="1192">
+                            <Name>Weinkeller Temp1</Name>
+                            <ID>22133</ID>
+                            <Senstype senstype_id="4">Generic sensor</Senstype>
+                            <Units unit_id="2">°C</Units>
+                            <LogPer>60</LogPer>
+                            <Exp>-1</Exp>
+                            <Min>100</Min>
+                            <Max>140</Max>
+                            <Shift>0</Shift>
+                            <Hyst>10</Hyst>
+                            <Status>
+                                <State>5</State>
+                                <Alarm>1</Alarm>
+                            </Status>
+                            <Alias>Weinlager Temp1-Kombi Perlogis</Alias>
+                            <Description/>
+                            <Value>136</Value>
+                            <Timestamp>1756830038</Timestamp>
+                            <Writable>0</Writable>
+                        </Sensor>
+                        <Sensor sens_id="1194">
+                            <Name>Weinkeller Temp2</Name>
+                            <ID>51614</ID>
+                            <Senstype senstype_id="4">Generic sensor</Senstype>
+                            <Units unit_id="2">°C</Units>
+                            <LogPer>60</LogPer>
+                            <Exp>-1</Exp>
+                            <Min>100</Min>
+                            <Max>140</Max>
+                            <Shift>0</Shift>
+                            <Hyst>10</Hyst>
+                            <Status>
+                                <State>1</State>
+                                <Alarm>0</Alarm>
+                            </Status>
+                            <Alias>Weinlager Temp2 Perlogis</Alias>
+                            <Description/>
+                            <Value>128</Value>
+                            <Timestamp>1756830038</Timestamp>
+                            <Writable>0</Writable>
+                        </Sensor>
+                    </Sensors>
+                </Group>
+            </Groups>
+        </Device>
+    </Devices>
+</Root>
