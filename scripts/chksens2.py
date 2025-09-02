@@ -184,8 +184,5 @@ if DiscordSend == True and sendmsgdisc == True:
 if ListLogData == True:
     print("\n\n ######## Daten Ausgabe ######## \n\n")
     print(LogFileText)
-    print("\n ### ERRORS ###\n")
-    print(DiscordText)
-
 
 # Ende der Verarbeitung
