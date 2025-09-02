@@ -5,7 +5,7 @@ data = {
     'content': 'Hallo, Discord!',
     'username': 'MartinsSensDeskBot'  # Optional: Absendername
     # Optional: 
-    # 'avatar_url': 'https://media-cdn.ubuntu-de.org/wiki/thumbnails/2/25/2547aa926ad69a2e4547a290ba7c9874e6405ea6i64x.png'
+    #'avatar_url': 'https://media-cdn.ubuntu-de.org/wiki/thumbnails/2/25/2547aa926ad69a2e4547a290ba7c9874e6405ea6i64x.png'
 }
 
 response = requests.post(webhook_url, json=data)
