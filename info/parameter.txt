@@ -1,4 +1,6 @@
 Sensdesk
 https://sensdesk.at/sensdesk/user/898/values.xml?values_xml_key=dfbkSLU74ZhtPg_7wG8YktPN-xpfEs8VMF-mYJwpaO8
 
-Discord Test
+Discord Test - Server Martin - SensDesk-testkanal - Webhook (CaptainHook)
+
+https://discord.com/api/webhooks/1412321293222674515/Ee6fjp9_Zp5p7tzi9Y1MNfn_myN-qo4E6VTdxWsnjWdGAgAkjU4R5yI1b6YCxdZ_cpwi
