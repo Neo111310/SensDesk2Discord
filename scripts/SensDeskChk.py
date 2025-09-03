@@ -47,7 +47,7 @@ import os
 parameter_dict = {}
 
 script_dir = os.path.dirname(os.path.abspath(__file__))
-dateipfad = os.path.join(script_dir, "jay.config")
+dateipfad = os.path.join(script_dir, "SensDesk.config")
 
 with open(dateipfad, "r") as file:
     for line in file:
