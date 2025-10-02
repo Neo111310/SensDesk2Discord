@@ -10,4 +10,4 @@ StartParameter "help" listet die gültigen Werte auf
 
 If You Have Ideas please Commot Ideas
 
-Webhook Senden Einbauen
+Webhook Senden Einbauen - ist Erledigt
